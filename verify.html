@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Lenix">
+  <meta name="description" content="This is a dev project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebPage</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body class="verify">
+  <div class="verify-section">
+    <fieldset>
+      <h1>Email Verification</h1>
+      <p>we've send a code to your email address</p>
+      <form action="https://httpbin.org/post" id="signUp">
+        <input type="text" pattern="[0-9] {6}" placeholder="code" required>
+        <br>
+        <a href="dash.html">Confirm</a>
+      </form>
+      <p>Didn't get the code ? <a href="#">Resend the code</a></p>
+  </fieldset>
+  </div>
+</body>
+</html>
