@@ -12,36 +12,40 @@
 </head>
 <body class="store-body">
 <header>
-  <nav>
-    <a href="dash.html"><img src="../images/img/logo.png" alt="Revival logo" title="Revival" style="width: 35px; height: 35px;"></a>
-    <a>Store</a>
-    <a href="#"><img src="../images/img/Lenix logo.png" alt="expired or deleted" width="35px" height="35px"></a>
-  </nav>
-  <nav class="store-nav">
+  <nav class="store-nav-after">
     <div class="store-left">
       <i class="fa-solid fa-bars"></i>
-      <div class="store-dropdown">
-        <div><a href="../store/restaurants.html">Restaurant</a></div>
-        <div><a href="../store/cars.html">Cars</a></div>
-        <div><a href="../store/workshops.html">Workshops</a></div>
-        <div><a href="../store/services.html">Services</a></div>
-        <div><a href="../store/projects.html">Projects</a></div>
-        <div><a href="../store/plates.html">Plates</a></div>
-        <div><a href="../store/estates.html">Estates</a></div>
-      </div>
     </div>
     <div class="store-center">
       <input type="search">
     </div>
     <div class="store-right">
       <div class="store-currency">العملة</div>
-      <a href="cart/html">السلة</a>
+      <a href="f/store/cart.html">السلة</a>
     </div>
   </nav>
 </header>
 <main>
-  <div class="store-home">
-  </div>
+  <article class="store-section"> <!-- I gave it article because it have a css code (main section{}) -->
+    <div class="store-header">
+      <h1> المركبات </h1>
+      <hr>
+    </div>
+    <article class="js-car-products"> <!-- The items -->
+<!--       <div class="store-item">
+        <div class="store-item-up-cars">
+          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">
+          <div class="store-item-name"> إضافة مركبة خاصة </div>
+          <div class="store-price-buy">USD 3.99$ ~ USD 29.99$</div>
+        </div>
+          <button class="btn-available">إضافة الى السلة</button>
+        </div>
+      </div> -->
+    </article>
+  </article>
 </main>
 <footer>
   <div class="footer-border"></div>
@@ -59,6 +63,8 @@
   </div>
 </footer>
 
+<script src="../scripts/cart.js"></script>
 <script src="../scripts/product.js"></script>
+
 </body>
 </html>
