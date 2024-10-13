@@ -7,36 +7,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebPage</title>
   <style>
-    body {
-      margin: 0;
+    * {
       padding: 0;
+      margin: 0;
     }
-    .container {
-      display: flex;
+    .dropdown {
+      width: 100%;
+      background-color: #22438C;
+      position: absolute;
+      z-index: 999;
+      display: none;
     }
-    .section {
-     display: flex;
-     flex-direction: row;
-     flex: 1;
+    li:hover .dropdown {
+      display: block;
     }
   </style>
 </head>
 <body>
 <main>
-  <div class="container">
-    <div class="section">
-        <h2>1</h2>
-        <p>abo nemo.atus sint perspiciatis?</p>
-    </div>
-    <div class="section">
-        <h2>2</h2>
-        <p>ilique rem rerum mocilis unde eum natus sint perspiciatis?</p>
-    </div>
-    <div class="section">
-        <h2>3</h2>
-        <p>Lorem ipugde eum natus sint perspiciatis?</p>
-    </div>
-  </div>
+  <li>
+    <a href="#">Languages</a>
+    <ul class="dropdown">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JS</a></li>
+      <li><a href="#">PHP</a></li>
+    </ul>
+  </li>
 </main>
 </body>
 </html>

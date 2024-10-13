@@ -711,12 +711,30 @@ section a:hover {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-right: 13%;
 }
 .store-left i.fa-bars {
   color: white;
   cursor: pointer;
+  padding-right: 5vh;
+}
+.store-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  margin-top: 28vh;
+  padding: 5px 40px;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+}
+.store-dropdown li a {
+  color: black;
+
+}
+.store-left:hover .store-dropdown{
+  display: block;
 }
 .store-center {
   display: flex;
