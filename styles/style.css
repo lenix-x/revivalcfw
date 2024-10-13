@@ -757,6 +757,20 @@ section a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
+.store-cart {
+  position: relative;
+  cursor: pointer;
+}
+.cart-quantity {
+  position: absolute;
+  font-size: medium;
+  color: black;
+  right: -1vh;
+  top: -1vh;
+  background-color: aqua;
+  border-radius: 1vh;
+  padding: 0vh 0.7vh;
+} 
 .store-currency {
   cursor: pointer;
 }
