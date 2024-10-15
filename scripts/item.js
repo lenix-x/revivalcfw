@@ -1,4 +1,4 @@
-import {cart, removeCartItem} from './cart.js'
+import {cart, removeCartItem, resetCartQuantity} from './cart.js'
 import { products } from './product.js'
 
 let cartInformation = ''
@@ -26,6 +26,7 @@ cartInformation += `
     <div class="item-price">$${validProduct.price}</div>
     <div class="item-status">متوفر</div>
     <div class="item-btns">
+      <button class="btn-buy js-reset-cart-quantity"> Reset </button>
       <button class="btn-buy">شراء الأن</button>
       <button class="btn-delete js-delete-item" data-product-id="${validProduct.id}" > إزالة من السلة </button>
     </div>
@@ -39,6 +40,12 @@ cartInformation += `
 `
 })
 document.querySelector('.js-item').innerHTML = cartInformation
+
+document.querySelectorAll('.js-reset-cart-quantity').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    resetCartQuantity()
+  })
+})
 
 document.querySelectorAll('.js-delete-item').forEach((link) => {
  link.addEventListener('click', () => {
