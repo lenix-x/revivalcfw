@@ -1,6 +1,4 @@
-export const products = []
-
-const products = [{
+export const products = [{
   id: 'e0f223c5-0b28-464b-8f06-716380949e58',
   image:'../images/vehicle/hyper/veh1.png',
   name: 'Bugatti Bolide',
@@ -268,7 +266,7 @@ restaurantProducts.forEach((product) => {
   houseProductsHT += `
           <div class="store-item">
         <div class="store-item-up-restaurants">
-          <a href="store/item.html"><interface src="${product.image}" alt="expired or deleted"></a>
+          <a href="store/item.html"><img src="${product.image}" alt="expired or deleted"></a>
         </div>
         <div class="store-item-down">
           <div class="store-item-info">
