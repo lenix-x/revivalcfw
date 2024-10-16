@@ -7,9 +7,9 @@ if (!cart) {
   }]
 }
 
-export function resetCartQuantity() {
+/* export function resetCartQuantity() {
   localStorage.removeItem('cart')
-}
+} */
 
 function saveCartQuantity() {
   localStorage.setItem('cart', JSON.stringify(cart))
@@ -37,7 +37,7 @@ export function addToCart(productId) {
 export function removeCartItem(productId) {
   const newCart = [];
   cart.forEach((cartItem) => {
-    if (cartItem.id !== productId) {
+    if (cartItem.productId !== productId) {
       newCart.push(cartItem);
     }
   })
