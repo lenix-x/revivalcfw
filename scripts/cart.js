@@ -1,47 +1,59 @@
-export let cart = JSON.parse(localStorage.getItem('cart'));
+import {cart, removeCartItem, resetCartQuantity} from './item.js'
+import {products} from './product.js'
 
-if (!cart) {
-  cart = [{
-    productId: 'e0f223c5-0b28-464b-8f06-716380949e58',
-    quantity: 1,
-  }]
-}
+let cartInformation = ''
 
-export function resetCartQuantity() {
-  localStorage.removeItem('cart')
-}
+cart.forEach((cartItem) => {
+  const productId = cartItem.productId;
 
-function saveCartQuantity() {
-  localStorage.setItem('cart', JSON.stringify(cart))
-}
+  let validProduct;
 
-export function addToCart(productId) {
-  let validItem
-  cart.forEach((cartItem) => {
-    if (productId === cartItem.productId) {
-      validItem = cartItem
+  products.forEach((product) => {
+    if (product.id === productId) {
+      validProduct = product
     }
   })
-  if (validItem) {
-    validItem.quantity += 1
-  } else {
-    cart.push({
-      productId: productId,
-      quantity: 1
-    })
-  }
 
-  saveCartQuantity()
-}
+cartInformation += `
+  <div class="cart-item js-cart-item-content-${validProduct.id}">
+    <div class="item-info">
 
-export function removeCartItem(productId) {
-  const newCart = [];
-  cart.forEach((cartItem) => {
-    if (cartItem.id !== productId) {
-      newCart.push(cartItem);
-    }
+      <div class="item-image-and-name">
+        <img src="${validProduct.image}" alt="expired or deleted">
+        <div class="item-name"> ${validProduct.name} </div>
+      </div>
+
+      <div class="item-price-and-status">
+        <div class="item-price">$${validProduct.price} : سعر الشراء</div>
+        <div class="item-status"> الحالة : متوفر </div>
+        <div class="cart-quanity">${cartItem.quantity} :الكمية</div>
+        <div class="delivery-timing"> مدة التسليم : <span style="color: aqua;"> 3 </span> ساعة (ساعات) </div>
+      </div>
+      <div class="item-btns">
+
+        <button class="btn-buy js-reset-cart-quantity"> Reset </button>
+        <button class="btn-buy">شراء الأن</button>
+
+        <button class="btn-delete js-delete-item" data-product-id="${validProduct.id}" > إزالة من السلة </button>
+      </div>
+    </div>
+  </div>
+`
+})
+
+document.querySelector('.js-item').innerHTML = cartInformation
+
+document.querySelectorAll('.js-reset-cart-quantity').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    resetCartQuantity()
   })
-  cart = newCart
+})
 
-  saveCartQuantity()
-}
+document.querySelectorAll('.js-delete-item').forEach((link) => {
+ link.addEventListener('click', () => {
+  const productId = link.dataset.productId;
+  removeCartItem(productId);
+  const content = document.querySelector(`.js-cart-item-content-${productId}`)
+  content.remove();
+ })
+})

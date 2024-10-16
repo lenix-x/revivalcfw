@@ -7,21 +7,41 @@
   <meta name="description" content="This is a WebPage project">
   <title>WebPage</title>
   <link rel="stylesheet" href="../styles/style.css" type="text/css">
-  <link rel="icon" href="../images/interface/logo.png" type="image/x-icon">
+  <link rel="icon" href="../images/interface/rsfw.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="store-body">
 <header>
   <nav class="store-nav-after">
-    <div class="store-left">
-      <i class="fa-solid fa-bars"></i>
+    <div class="store-bars">
+      <div class="store-left">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="store-dropdown">
+        <div><a href="../store.html">&lt; Go Back</a></div>
+        <div><a href="../store/cars.html">Cars</a></div>
+        <div><a href="../store/workshops.html">Workshops</a></div>
+        <div><a href="../store/services.html">Services</a></div>
+        <div><a href="../store/projects.html">Projects</a></div>
+        <div><a href="../store/plates.html">Plates</a></div>
+        <div><a href="../store/estates.html">Estates</a></div>
+      </div>
+    </div>
+    <div class="store-home">
+      <a href="../dash.html">
+        <img src="../images/interface/rsfw.png" alt="Revival logo" title="Revival" style="width: 50px; height: 50px;">
+        <i>evival&nbsp;City</i>
+      </a>
     </div>
     <div class="store-center">
       <input type="search">
     </div>
     <div class="store-right">
-      <div class="store-currency">العملة</div>
-      <a href="cart/html">السلة</a>
+      <div class="store-currency">$</div>
+      <a class="store-cart" href="cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="cart-quantity js-cart-quantity">0</div>
+      </a>
     </div>
   </nav>
 </header>
@@ -31,213 +51,18 @@
       <h1> المطاعم </h1>
       <hr>
     </div>
-    <article> <!-- The items -->
+    <article class="js-restaurant-products"> <!-- The items -->
       <div class="store-item">
         <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../../images/restaurant/burgershot.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-        <div class="store-item-info">
-          <div class="store-item-name"> Burger Shot | برجر شوت </div>
-          <div class="store-price-buy"> USD 19.99$ <span> : شراء</span> </div>
-          <div class="store-price-rent"> USD 9.99$ <span> : إيجار</span> </div>
-        </div>
-          <button class="btn-available">إضافة الى السلة</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/uwucafe.png" alt="expired or deleted" width="" height=""></a>
+          <a href="../store/item.html"><img src="${product.image}" alt="expired or deleted"></a>
         </div>
         <div class="store-item-down">
           <div class="store-item-info">
-            <div class="store-item-name"> UWU Cafe Coffee | مقهى القطط </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
+            <div class="store-item-name">${product.name}</div>
+            <div class="store-price-buy">$${product.price / 100} &nbsp;<span style="color: white;"> :شراء </span> </div>
+            <div class="store-price-rent">$${product.rent} &nbsp;<span style="color: white;"> :إيجار </div>
           </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/beanmachine.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Bean Machine Coffee | مقهى بين </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/domino.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Domino's Pizza | مطعم دومينوس </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img style="margin-top: 8vh" src="../images/restaurant/innout.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> In N Out | مطعم إن ان أوت </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/italian.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Italian Restaurant | مطعم إيطالي </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/japan.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Japanese Restaurant | مطعم ياباني </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/kfc.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-            <div class="store-item-info">
-            <div class="store-item-name"> KFC | مطعم كيه أف سي </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/maldini.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Maldini Restaurant | مطعم مالديني </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/mcdonald.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-        <div class="store-item-info">
-            <div class="store-item-name"> McDonald | مطعم ماكدونالد </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img style="margin-top: 5vh" src="../images/restaurant/pizza.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Pizza Hut | مطعم بيتزا </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/popsdiner.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Pops Diner | مطعم بوبس دينر </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div> 
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img style="margin-top: 7vh" src="../images/restaurant/subway.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Subway | مطعم سبواي </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/tacos.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-        <div class="store-item-info">
-            <div class="store-item-name"> Tacos | مطعم تاكوس </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img style="margin-top: 5vh" src="../images/restaurant/upnatom.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name"> Up N Atom | مطعم أب ان أتوم </div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/restaurant/bayviewhotel.png" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name" title="Bay View Hotel Restaurant | مقهى فندق باي"> Bay View Hotel Restaurant | باي ...</div>
-            <div class="store-price-buy"> USD --.--$ <span> : شراء</span> </div>
-            <div class="store-price-rent"> USD -.--$ <span> : إيجار</span> </div>
-          </div>
-          <button class="btn-unavailable">غير متوفر</button>
+        <button class="btn-available js-add-to-cart" data-product-id="${product.id}">إضافة الى السلة</button>
         </div>
       </div>
     </article>
@@ -258,5 +83,7 @@
     </div>
   </div>
 </footer>
+
+<script type="module" src="../scripts/store.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 // import * as anything from 'example' | this to import anything from example without exporting everytime
-
-import {cart, addToCart} from './cart.js'
+// import sometimes can ne and must be without curlybrackets which if it was a default export => export default formatfunction
+import {cart, addToCart} from './item.js'
 import {products} from './product.js'
 
 let productsHTML = ''
@@ -13,7 +13,7 @@ products.forEach((product) => {
         <div class="store-item-down">
         <div class="store-item-info">
         <div class="store-item-name">${product.name}</div>
-        <div class="store-price-buy">$${product.price / 100} &nbsp;<span style="color: white;"> :شراء </span> </div>
+        <div class="store-price-buy">$${product.price} &nbsp;<span style="color: white;"> :شراء </span> </div>
         <div class="store-price-buy">$${product.rent} &nbsp;<span style="color: white;"> :إيجار </div>
       </div>
       <button class="btn-available js-add-to-cart" data-product-id="${product.id}">إضافة الى السلة</button>

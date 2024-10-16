@@ -7,21 +7,41 @@
   <meta name="description" content="This is a WebPage project">
   <title>WebPage</title>
   <link rel="stylesheet" href="../styles/style.css" type="text/css">
-  <link rel="icon" href="../images/interface/logo.png" type="image/x-icon">
+  <link rel="icon" href="../images/interface/rsfw.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="store-body">
 <header>
   <nav class="store-nav-after">
-    <div class="store-left">
-      <i class="fa-solid fa-bars"></i>
+    <div class="store-bars">
+      <div class="store-left">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="store-dropdown">
+        <div><a href="../store.html">&lt; Go Back</a></div>
+        <div><a href="../store/restaurants.html">Restaurant</a></div>
+        <div><a href="../store/cars.html">Cars</a></div>
+        <div><a href="../store/workshops.html">Workshops</a></div>
+        <div><a href="../store/services.html">Services</a></div>
+        <div><a href="../store/plates.html">Plates</a></div>
+        <div><a href="../store/estates.html">Estates</a></div>
+      </div>
+    </div>
+    <div class="store-home">
+      <a href="../dash.html">
+        <img src="../images/interface/rsfw.png" alt="Revival logo" title="Revival" style="width: 50px; height: 50px;">
+        <i>evival&nbsp;City</i>
+      </a>
     </div>
     <div class="store-center">
       <input type="search">
     </div>
     <div class="store-right">
-      <div class="store-currency">العملة</div>
-      <a href="cart/html">السلة</a>
+      <div class="store-currency">$</div>
+      <a class="store-cart" href="cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="cart-quantity js-cart-quantity">0</div>
+      </a>
     </div>
   </nav>
 </header>
