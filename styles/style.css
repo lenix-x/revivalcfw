@@ -636,7 +636,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: rgb(202, 202, 202);
+  color: white;
   transition: all 0.2s ease-in-out;
 }
 .left {
@@ -936,19 +936,21 @@ section a:hover {
 .item-body {
   height: auto;
 }
-.item-section {
-  width: 80%;
+.item-section article {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  justify-content: center;
   text-align: center;
+  width: 75%;
+  margin: 0 auto;
 }
-.item-section article {
-  flex: 3;
-  border: 1px solid gray;
+.js-item {
+  flex: 2;
 }
-.item-section aside {
+.js-aside {
   flex: 1;
+}
+.order-summary {
   border: 1px solid gray;
 }
 .item-header {
@@ -1442,6 +1444,7 @@ section a:hover {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  height: 100vh;
 }
 .moh-section fieldset {
   position: absolute;
@@ -1500,7 +1503,6 @@ section a:hover {
   text-align: center;
   width: 100%;
   bottom: 0;
-  margin-top: 1%;
 }
 /* Moi */
 

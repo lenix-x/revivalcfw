@@ -1,15 +1,20 @@
-export let cart = JSON.parse(localStorage.getItem('cart'));
+export let cart;
 
-if (!cart) {
-  cart = [{
-    productId: 'e0f223c5-0b28-464b-8f06-716380949e58',
-    quantity: 1,
-  }]
+loadFromStorage()
+
+export function loadFromStorage() {
+  cart = JSON.parse(localStorage.getItem('cart'));
+
+  if (!cart) {
+    cart = [{
+      productId: 'e0f223c5-0b28-464b-8f06-716380949e58',
+      quantity: 1,
+    }]
+  }
 }
-
-/* export function resetCartQuantity() {
+export function resetCartQuantity() {
   localStorage.removeItem('cart')
-} */
+}
 
 function saveCartQuantity() {
   localStorage.setItem('cart', JSON.stringify(cart))

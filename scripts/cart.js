@@ -1,18 +1,14 @@
 import {cart, removeCartItem, /* resetCartQuantity */} from './item.js'
-import {products} from './product.js'
+import {getProduct} from './product.js'
+import {orderSummary} from './order.js'
+
+orderSummary()
 
 let cartInformation = ''
 
 cart.forEach((cartItem) => {
   const productId = cartItem.productId;
-
-  let validProduct;
-
-  products.forEach((product) => {
-    if (product.id === productId) {
-      validProduct = product
-    }
-  })
+  const validProduct = getProduct(productId)
 
 cartInformation += `
   <div class="cart-item js-cart-item-content-${validProduct.id}">
@@ -43,11 +39,11 @@ cartInformation += `
 
 document.querySelector('.js-item').innerHTML = cartInformation
 
-/* document.querySelectorAll('.js-reset-cart-quantity').forEach((btn) => {
+document.querySelectorAll('.js-reset-cart-quantity').forEach((btn) => {
   btn.addEventListener('click', () => {
     resetCartQuantity()
   })
-}) */
+})
 
 document.querySelectorAll('.js-delete-item').forEach((link) => {
  link.addEventListener('click', () => {

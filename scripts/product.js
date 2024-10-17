@@ -1,3 +1,14 @@
+export function getProduct(productId) {
+  let validProduct;
+
+  products.forEach((product) => {
+    if (product.id === productId) {
+      validProduct = product
+    }
+  })
+
+  return validProduct
+}
 export const products = [{
   id: 'e0f223c5-0b28-464b-8f06-716380949e58',
   image:'../images/vehicle/hyper/veh1.png',
