@@ -8,7 +8,6 @@ export function orderSummary() {
     const product = getProduct(cartItem.productId)
     productPrice += product.price * cartItem.quantity
   })
-  console.log(productPrice)
 
   const orderHTML = `
       <aside class="order-summary">
