@@ -12,6 +12,7 @@ products.forEach((product) => {
       </div>
         <div class="store-item-down">
         <div class="store-item-info">
+        ${product.productTypeHTML()}
         <div class="store-item-name">${product.name}</div>
         <div class="store-price-buy">$${product.price} &nbsp;<span style="color: white;"> :شراء </span> </div>
         <div class="store-price-buy">$${product.rent} &nbsp;<span style="color: white;"> :إيجار </div>
