@@ -974,7 +974,7 @@ section a:hover {
 .item-type {
   text-align: left;
   font-weight: bold;
-  color: red;
+  color: #00ffce;
   text-shadow: 0 0 1vh white;
 }
 .item-image-and-name {
@@ -1149,12 +1149,12 @@ section a:hover {
 .rules-section details[open] {
   margin-top: 1%;
   border-radius: 0.5em;
-  border-left: 0.1vh solid cyan;
-  border-right: 0.1vh solid cyan;
-  border-top: 0.1vh solid cyan;
+  border-left: 0.1vh solid #00d0ab;
+  border-right: 0.1vh solid #00d0ab;
+  border-top: 0.1vh solid #00d0ab;
 }
 .rules-section details[open] summary {
-  color: cyan;
+  color: #00d0ab;
 }
 .rules-section summary {
   cursor: pointer;

@@ -1,6 +1,6 @@
 // import * as anything from 'example' | this to import anything from example without exporting everytime
 // import sometimes can ne and must be without curlybrackets which if it was a default export => export default formatfunction
-import {cart, addToCart} from './item.js'
+import './item.js'
 import {products} from './product.js'
 
 let productsHTML = ''

@@ -1,4 +1,4 @@
-import {cart, removeCartItem, /* resetCartQuantity */} from './item.js'
+import {cart, removeCartItem, resetCartQuantity } from './item.js'
 import {getProduct} from './product.js'
 import {orderSummary} from './order.js'
 
