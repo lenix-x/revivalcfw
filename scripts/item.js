@@ -6,10 +6,7 @@ export function loadFromStorage() {
   cart = JSON.parse(localStorage.getItem('cart'));
 
   if (!cart) {
-    cart = [{
-      productId: 'e0f223c5-0b28-464b-8f06-716380949e58',
-      quantity: 1,
-    }]
+    cart = []
   }
 }
 export function resetCartQuantity() {
