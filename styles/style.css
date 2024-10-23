@@ -16,10 +16,15 @@ radial-gradient(ellipse 100% 40% at -40% 30%, #005a79,#00111d); */
   --accent1: #101418;
   --accent2: #e3f1e8;
   --accent3: #101418c2;
-  --primary: #c5fcee;
+  --primary1: #c5fcee;
+  --primary2: #66fff5;
+  --primary3: #008080;
   --secondary1: #354b45;
   --secondary2: #00ac87;
-  --dominant: #00ffda;
+  --secondary3: #ff003a;
+  --dominant1: #00ffe0;
+  --dominant2: #ff5733;
+  --dominant3: #5c00ff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
@@ -60,65 +65,51 @@ a {
   color: white;
 }
 
-@media (orientation: portrait) {
-  .home header {
-
-    font-family: var(--font);
-    background-color: black;
-    width: 20vh;
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: center;
-  }
-  /* .home header {
-    font-family: var(--font);
-    background-color: var(--accent2);
-    border-bottom: 1px solid var(--accent1);
-    padding-top: clamp(1vh, 1.5vh, 4vh);
-    padding-bottom: clamp(1vh, 1.55vh, 4vh);
-  } */
-  .home nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .home header a {
-    color: var(--accent2);
-  }
-  .home header .left {
-    flex: 3;
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-  }
-  .home header .left img {
-    max-width: clamp(50px, 60px, 70px);
-  }
-  .home header .center {
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-  .home header .center a {
-    margin: 0 1vw;
-    font-size: var(--xl);
-    transition: all 0.2s ease-in-out;
-  }
-  .home header .center a:hover {
-    color: var(--secondary2);
-  }
-  .home header .right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+/* .home header {
+  font-family: var(--font);
+  background-color: var(--accent2);
+  border-bottom: 1px solid var(--accent1);
+  padding-top: clamp(1vh, 1.5vh, 4vh);
+  padding-bottom: clamp(1vh, 1.55vh, 4vh);
 }
-@media (orientation: landscape) {
-  
+.home nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home header a {
+  color: var(--accent2);
+}
+.home header .left {
+  flex: 3;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.home header .left img {
+  max-width: clamp(50px, 60px, 70px);
+}
+.home header .center {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.home header .center a {
+  margin: 0 1vw;
+  font-size: var(--xl);
+  transition: all 0.2s ease-in-out;
+}
+.home header .center a:hover {
+  color: var(--secondary2);
+}
+.home header .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+ */
 .home header {
   font-family: var(--font);
   background-color: var(--accent2);
@@ -160,11 +151,10 @@ a {
   display: flex;
   justify-content: center;
 }
-}
 .home header .right button {
   margin: 0 0.5rem;
   padding: clamp(0.3rem, 0.8vw, 5rem);
-  background-color: var(--dominant);
+  background-color: var(--dominant1);
   color: var(--accent1);
   font-size: var(--m);
   border: 1px solid var(--accent1);
@@ -181,7 +171,7 @@ a {
 .home header .right .btn:hover {
   background-color: var(--accent1);
   border: 1px solid var(--accent1);
-  color: var(--dominant);
+  color: var(--dominant1);
 }
 footer {
   display: flex;
@@ -199,7 +189,7 @@ footer .section2 a {
   font-weight: 400;
 }
 footer .section2 a:hover {
-  border-bottom: 1px solid var(--dominant);
+  border-bottom: 1px solid var(--dominant1);
 }
 footer .upper img {
   margin-bottom: 2vh;
@@ -244,7 +234,7 @@ footer .down a:hover {
   font-size: var(--l);
 }
 .home-section1 button {
-  background-color: var(--dominant);
+  background-color: var(--dominant1);
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0,  0, 0.11));
 }
 .home-section1 .btn {
@@ -253,7 +243,7 @@ footer .down a:hover {
   color: var(--accent2);
 }
 .home-section1 button:hover {
-  box-shadow: 0 0 1rem 0.1rem var(--dominant);
+  box-shadow: 0 0 1rem 0.1rem var(--dominant1);
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0,  0, 0.11));
 }
 .home-section1 .btn:hover {
@@ -312,7 +302,7 @@ footer .down a:hover {
   justify-content: space-evenly;
 }
 .home-section2 i.fa-user-tie {
-  color: var(--dominant);
+  color: var(--dominant1);
   font-size: var(--xxl);
 }
 .home-section2 i.fa-youtube {
@@ -338,8 +328,8 @@ footer .down a:hover {
   box-shadow: 0 0 1.3rem 1px var(--accent1);
 }
 .home-section2 .article1 button {
-  color: var(--dominant);
-  box-shadow: 0 0 0.1rem 1px var(--dominant);
+  color: var(--dominant1);
+  box-shadow: 0 0 0.1rem 1px var(--dominant1);
 }
 .home-section2 .article2 button {
   color: red;
@@ -350,8 +340,8 @@ footer .down a:hover {
   box-shadow: 0 0 0.1rem 1px rgb(98, 0, 255);
 }
 .home-section2 .article1 button:hover {
-  color: var(--dominant);
-  box-shadow: 0 0 1.3rem 1px var(--dominant);
+  color: var(--dominant1);
+  box-shadow: 0 0 1.3rem 1px var(--dominant1);
 }
 .home-section2 .article2 button:hover {
   color: red;
@@ -362,7 +352,7 @@ footer .down a:hover {
   box-shadow: 0 0 1.3rem 1px rgb(0, 255, 0);
 }
 .home-section3 {
-  background-color: var(--dominant);
+  background-color: var(--dominant1);
   color: var(--accent1);
   font-size: var(--m);
   display: grid;
@@ -436,13 +426,13 @@ footer .down a:hover {
 }
 .home-section3 .article3 button:hover {
   transform: translateY(-0.5em);
-  color: var(--dominant);
+  color: var(--dominant1);
   box-shadow: 0 0 1rem 0.1rem var(--accent1);
   background-color: var(--accent1);
 }
 .home-section3 .article3 a:hover {
   transform: translateY(-0.5em);
-  color: var(--dominant);
+  color: var(--dominant1);
   box-shadow: 0 0 1rem 0.1rem var(--accent1);
   background-color: var(--accent2);
   border-radius: 1vh;
@@ -477,7 +467,7 @@ footer .down a:hover {
 /*  */
 .rules-section {
   font-size: var(--m);
-  background-color: var(--secondary1);
+  background-color: var(--accent3);
   width: min(100%, 100%);
   text-align: right;
   height: 100%;
@@ -504,8 +494,8 @@ footer .down a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .rules-section details[open] summary {
-  color: var(--dominant);
-  text-shadow: 0 0 1rem var(--dominant);
+  color: var(--dominant1);
+  text-shadow: 0 0 1rem var(--dominant1);
 }
 .rules-section summary {
   list-style: none;
@@ -515,7 +505,7 @@ footer .down a:hover {
 }
 .rules-section summary:hover {
   cursor: pointer;
-  color: var(--dominant);
+  color: var(--dominant1);
 }
 .rules-section .type1 ol li {
   font-size: var(--m);
@@ -554,4 +544,69 @@ footer .down a:hover {
 }
 .rules-section .type4 ol .li:hover {
   text-decoration: none;
+}
+
+.apply-section {
+  height: 100%;
+}
+.apply-section h1 {
+  font-size: var(--xxl);
+}
+.apply-section .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2vw;
+  width: min(100%, 100%);
+  flex-wrap: wrap;
+}
+.apply-section .mo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 29%;
+  border-radius: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+  padding: 1rem 1rem;
+}
+.apply-section .mo:hover {
+  box-shadow: 0 0 1rem 0.1rem rgba(128, 128, 128, 0.5);
+}
+.apply-section .box h1 {
+  font-weight: bold;
+  font-size: var(--xl);
+}
+.apply-section .title {
+  font-weight: bold;
+  font-size: var(--m);
+  text-align: center;
+}
+.apply-section .requirement p {
+  font-size: var(--m);
+  text-align: center;
+  font-weight: bolder;
+}
+.apply-section .btns {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.apply-section a {
+  background-color: var(--accent2);
+  color: var(--secondary1);
+  font-size: var(--m);
+  font-weight: bold;
+  border-radius: 1vh;
+  padding-left: clamp(1rem, 2rem, 3rem);
+  padding-right: clamp(1rem, 2rem, 3rem);
+  padding-top: clamp(0.3rem, 1rem, 3rem);
+  padding-bottom: clamp(0.3rem, 1rem, 3rem);
+  transition: all 0.2s ease-in-out;
+}
+.apply-section a:hover {
+  background-color: var(--dominant1);
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 1rem 0.1rem rgba(128, 128, 128, 0.5);
 }
