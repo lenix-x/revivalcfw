@@ -5,165 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Lenix">
   <meta name="description" content="This is a WebPage project">
-  <title>WebPage</title>
+  <title>Revival | Store - Services</title>
   <link rel="stylesheet" href="../styles/style.css" type="text/css">
   <link rel="icon" href="../images/interface/rsfw.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="store-body">
-<header>
-  <nav class="store-nav-after">
-    <div class="store-bars">
-      <div class="store-left">
-        <i class="fa-solid fa-bars"></i>
+  <div style="position: fixed; right: 5%; top: 10%; opacity: 0.4; text-shadow: 0 0 1rem gray; z-index: 2;">ماتراه هو ليس النتيجة النهائية (قيد التطوير و الصيانة)</div>
+  <header>
+    <nav class="store-nav">
+      <div class="left">
+        <div class="store-search">
+          <input type="search" placeholder="Search...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
-      <div class="store-dropdown">
-        <div><a href="../store.html">&lt; Go Back</a></div>
-        <div><a href="../store/restaurants.html">Restaurant</a></div>
+      <div class="store-container">
+        <div><a href="../store.html"><b>Store</b></a></div>
         <div><a href="../store/cars.html">Cars</a></div>
+        <div><a href="../store/restaurants.html">Restaurants</a></div>
         <div><a href="../store/workshops.html">Workshops</a></div>
         <div><a href="../store/projects.html">Projects</a></div>
         <div><a href="../store/plates.html">Plates</a></div>
         <div><a href="../store/estates.html">Estates</a></div>
       </div>
-    </div>
-    <div class="store-home">
-      <a href="../home.html">
-        <img src="../images/interface/rsfw.png" alt="Revival logo" title="Revival" style="width: 50px; height: 50px;">
-        <i>evival&nbsp;City</i>
-      </a>
-    </div>
-    <div class="store-center">
-      <input type="search">
-    </div>
-    <div class="store-right">
-      <div class="store-currency">$</div>
-      <a class="store-cart" href="cart.html">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <div class="cart-quantity js-cart-quantity">0</div>
-      </a>
-    </div>
-  </nav>
-</header>
-<main>
-  <article class="store-section"> <!-- I gave it article because it have a css code (main section{}) -->
-    <div class="store-header">
-      <h1> الخدمات </h1>
-      <hr>
-    </div>
-    <article> <!-- The items -->
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-          <div class="store-item-name"> طلب خاص </div>
-          <div class="store-price-buy"> USD --.--$ ~ --.--$ <span> : شراء</span> </div>
-          <div class="store-price-rent"> USD -.--$ ~ -.--$ <span> : إيجار</span> </div>
+      <div class="right">
+        <!-- <div class="store-currency">$</div> -->
+        <a class="store-cart" href="../store/cart.html">
+          <i class="fa-solid fa-cart-shopping">
+            <div class="cart-quantity js-cart-quantity">0</div>
+          </i>
+        </a>
       </div>
-          <button class="btn-available">إضافة الى السلة</button>
-        </div>
+    </nav>
+  </header>
+  <main class="items-main">
+    <article class="store-section">
+      <div class="store-header">
+        <h1> الخدمات </h1>
       </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
+      <article class="js-products">
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">
+              <div class="store-item-name"> أولوية الدخول | المستوى الثالث</div>
+              <div class="store-price-buy"><span>$9.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
         </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-          <div class="store-item-name"> أولوية الدخول | المستوى الثالث</div>
-          <div class="store-price-buy">USD 9.99$</div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">
+              <div class="store-item-name"> أولوية الدخول | المستوى الثاني</div>
+              <div class="store-price-buy"><span>$6.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$3.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
         </div>
-          <button class="btn-available">إضافة الى السلة</button>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">
+              <div class="store-item-name"> أولوية الدخول | المستوى الأول</div>
+              <div class="store-price-buy"><span>$4.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$2.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
         </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">
+              <div class="store-item-name"> شخصية مميزة </div>
+              <div class="store-price-buy"><span>$8.99</span> :شراء</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">
+              <div class="store-item-name"> حذف شخصية </div>
+              <div class="store-price-buy"><span>$1.99</span> :شراء</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">
+              <div class="store-item-name"> إضافة ملابس </div>
+              <div class="store-price-buy"><span>$9.99 ~ 19.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$3.99 ~ 8.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">
+              <div class="store-item-name"> إضافة بخاخ </div>
+              <div class="store-price-buy"><span>$9.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$2.99</span> :إيجار</div>
+            </div>
+            <button class="btn-unavailable" >غير متوفر</button>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">
+            <div class="store-item-name"> طلب خاص </div>
+            <div class="store-price-buy"> USD --.--$ ~ --.--$ <span> : شراء</span> </div>
+            <div class="store-price-rent"> USD -.--$ ~ -.--$ <span> : إيجار</span> </div>
+        </div>
+        <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
       </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
         </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-          <div class="store-item-name"> أولوية الدخول | المستوى الثاني</div>
-          <div class="store-price-buy">USD 6.99$</div>
-        </div>
-          <button class="btn-available">إضافة الى السلة</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-          <div class="store-item-name"> أولوية الدخول | المستوى الأول</div>
-          <div class="store-price-buy">USD 4.99$</div>
-        </div>
-          <button class="btn-available">إضافة الى السلة</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-          <div class="store-item-name"> شخصية مميزة </div>
-          <div class="store-price-buy">USD 8.99$</div>
-        </div>
-          <button class="btn-available">إضافة الى السلة</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-          <div class="store-item-name"> حذف شخصية </div>
-          <div class="store-price-buy">USD 5.99$</div>
-        </div>
-          <button class="btn-available">إضافة الى السلة</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-          <div class="store-item-name"> إضافة ملابس </div>
-          <div class="store-price-buy">USD 3.99$ ~ 8.99$</div>
-        </div>
-          <button class="btn-available">إضافة الى السلة</button>
-        </div>
-      </div>
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="store/item.html"><img src="../images/service.jpg" alt="expired or deleted" width="" height=""></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-          <div class="store-item-name"> إضافة بخاخ </div>
-          <div class="store-price-buy">USD 2.99$ ~ 6.99$</div>
-        </div>
-          <button class="btn-available">إضافة الى السلة</button>
-        </div>
-      </div>
+      </article>
     </article>
-  </article>
-</main>
+  </main>
 <footer>
-  <div class="footer-border"></div>
-  <div class="footer">
+  <div class="down">
     <div>
-      <p>Powered By Lenix  &nbsp; &bull;  &nbsp; All Copyrights Are Reserved &copy; Revival City 2024</p>
-    </div>
-    <div>
-      <a href="terms.html">Terms</a> &nbsp; &bull;  &nbsp; 
-      <a href="privacypolicy.html">Privacy Policy</a> &nbsp; &bull;  &nbsp; 
-      <a href="security.html">Security</a> &nbsp; &bull;  &nbsp; 
-      <a href="https://discord.gg/83bBX2GvCg">Contact Us</a> &nbsp; &bull;  &nbsp; 
-      <a href="aboutus.html">About Us</a>
+      <p>Founded By Lenix  &nbsp; &bull;  &nbsp; All Rights Reserved &copy; Revival City 2024</p>
     </div>
   </div>
 </footer>

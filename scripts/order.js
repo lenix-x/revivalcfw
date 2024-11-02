@@ -10,13 +10,14 @@ export function orderSummary() {
   })
 
   const orderHTML = `
-      <aside class="order-summary">
-      <h1>Order Summary</h1>
-      <p>Item(3): $${productPrice}</p>
-      <p>Bugatti Bolide(1): $24.99</p>
-      <p>Pagani Zodiak(2): $24.99</p>
-      <h4>Total Cost: $49.98</h4>
-      <button>Confirm The Order</button>
+    <aside class="order-summary">
+    <div>شرائك لهاذه المنتجات والخدمات تعني موافقتك على شروط و سياسات و قوانين المتجر </div>
+      <div>
+        <h4>Total Cost: <span style="color: var(--dominant1); text-shadow: 0 0 1rem var(--dominant1)"> $${productPrice} </span></h4>
+        <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771">Confirm The Order</a>      
+      </div>
+      <a class="go-back" href="../store.html">Back To Store</a> 
+      <!--<button class="js-reset-cart-quantity"> Reset The Cart </button>-->
     </aside>
   `
   document.querySelector('.js-aside').innerHTML = orderHTML

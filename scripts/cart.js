@@ -13,24 +13,21 @@ cart.forEach((cartItem) => {
 cartInformation += `
   <div class="cart-item js-cart-item-content-${validProduct.id}">
     <div class="item-info">
-
-      <div class="item-image-and-name">
+      <div class="main">
         <img src="${validProduct.image}" alt="expired or deleted">
-        <div class="item-name"> ${validProduct.name} </div>
       </div>
-
-      <div class="item-price-and-status">
-        <div class="item-price">$${validProduct.price} : سعر الشراء</div>
-        <div class="item-status"> الحالة : متوفر </div>
-        <div class="cart-quanity">${cartItem.quantity} :الكمية</div>
-        <div class="delivery-timing"> مدة التسليم : <span style="color: aqua;"> 3 </span> ساعة (ساعات) </div>
+      <div class="interactions">
+        <div class="description">
+          <div class="item-name">${validProduct.name}</div>
+        </div>
+        <div class="price">
+          <div class="item-price">(${cartItem.quantity})</div>
+          <div class="item-price">$${validProduct.price}</div>
+          <div class="item-price">$${validProduct.rent}</div>
+        </div>
       </div>
-      <div class="item-btns">
-
-        <button class="btn-buy js-reset-cart-quantity"> Reset </button>
-        <button class="btn-buy">شراء الأن</button>
-
-        <button class="btn-delete js-delete-item" data-product-id="${validProduct.id}" > إزالة من السلة </button>
+      <div>
+        <i class="fas fa-xmark js-delete-item" data-product-id="${validProduct.id}" title="حذف المنتج او الخدمة السلة"></i>
       </div>
     </div>
   </div>

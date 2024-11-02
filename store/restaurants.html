@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Lenix">
   <meta name="description" content="This is a WebPage project">
-  <title>WebPage</title>
+  <title>Revival | Store - Restaurants</title>
   <link rel="stylesheet" href="../styles/style.css" type="text/css">
   <link rel="icon" href="../images/interface/rsfw.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="store-body">
-<header>
-  <nav class="store-nav-after">
-    <div class="store-bars">
-      <div class="store-left">
-        <i class="fa-solid fa-bars"></i>
+<body class="store">
+  <div style="position: fixed; right: 5%; top: 10%; opacity: 0.4; text-shadow: 0 0 1rem gray; z-index: 2;">ماتراه هو ليس النتيجة النهائية (قيد التطوير و الصيانة)</div>
+  <header>
+    <nav class="store-nav">
+      <div class="left">
+        <div class="store-search">
+          <input type="search" placeholder="Search...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
-      <div class="store-dropdown">
-        <div><a href="../store.html">&lt; Go Back</a></div>
+      <div class="store-container">
+        <div><a href="../store.html"><b>Store</b></a></div>
         <div><a href="../store/cars.html">Cars</a></div>
         <div><a href="../store/workshops.html">Workshops</a></div>
         <div><a href="../store/services.html">Services</a></div>
@@ -26,64 +29,242 @@
         <div><a href="../store/plates.html">Plates</a></div>
         <div><a href="../store/estates.html">Estates</a></div>
       </div>
-    </div>
-    <div class="store-home">
-      <a href="../home.html">
-        <img src="../images/interface/rsfw.png" alt="Revival logo" title="Revival" style="width: 50px; height: 50px;">
-        <i>evival&nbsp;City</i>
-      </a>
-    </div>
-    <div class="store-center">
-      <input type="search">
-    </div>
-    <div class="store-right">
-      <div class="store-currency">$</div>
-      <a class="store-cart" href="cart.html">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <div class="cart-quantity js-cart-quantity">0</div>
-      </a>
-    </div>
-  </nav>
-</header>
-<main>
-  <article class="store-section"> <!-- I gave it article because it have a css code (main section{}) -->
-    <div class="store-header">
-      <h1> المطاعم </h1>
-      <hr>
-    </div>
-    <article class="js-restaurant-products"> <!-- The items -->
-      <div class="store-item">
-        <div class="store-item-up-restaurants">
-          <a href="../store/item.html"><img src="${product.image}" alt="expired or deleted"></a>
-        </div>
-        <div class="store-item-down">
-          <div class="store-item-info">
-            <div class="store-item-name">${product.name}</div>
-            <div class="store-price-buy">$${product.price / 100} &nbsp;<span style="color: white;"> :شراء </span> </div>
-            <div class="store-price-rent">$${product.rent} &nbsp;<span style="color: white;"> :إيجار </div>
-          </div>
-        <button class="btn-available js-add-to-cart" data-product-id="${product.id}">إضافة الى السلة</button>
-        </div>
+      <div class="right">
+        <!-- <div class="store-currency">$</div> -->
+        <a class="store-cart" href="../store/cart.html">
+          <i class="fa-solid fa-cart-shopping">
+            <div class="cart-quantity js-cart-quantity">0</div>
+          </i>
+        </a>
       </div>
+    </nav>
+  </header>
+  <main class="items-main">
+    <article class="store-section">
+      <div class="store-header">
+        <h1> المطاعم </h1>
+       </div>
+      <article class="js-products">
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/burgershot.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">Burgershot</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$9.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/japan.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Restaurant
+              <div class="store-item-name">Japanese Restaurant</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$9.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/uwucafe.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Cafe
+              <div class="store-item-name">UWU Cafe</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$9.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/kfc.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">KFC</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$9.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/mcdonald.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">McDonald</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$9.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/beanmachine.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Cafe
+              <div class="store-item-name">Bean Machine Cafe</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$9.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/bayviewhotel.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Restaurant
+              <div class="store-item-name">Paleto Bay Hotel Restaurant</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/popsdiner.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">Pop's Dinner</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/italian.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Restaurant
+              <div class="store-item-name">italian Restaurant</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/tacos.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">Tacos</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/domino.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">Domino</div>
+              <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <button class="btn-sold js-add-to-cart" > غير متوفر (تم البيع) </button>
+          </div>
+        </div>
+
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img style="height: 40vh;" src="../images/restaurant/maldini.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Restaurant
+              <div class="store-item-name">Maldini Restaurant</div>
+              <div class="store-price-buy"><span>$9.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/pizza.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">Pizza Hut</div>
+              <div class="store-price-buy"><span>$9.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img style="height: 30vh;" src="../images/restaurant/subway.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">Subway</div>
+              <div class="store-price-buy"><span>$9.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/upnatom.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">Up-n-Atom</div>
+              <div class="store-price-buy"><span>$9.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-item-up">
+            <a href="../store/item.html"><img src="../images/restaurant/innout.png" alt="expired or deleted"></a>
+          </div>
+          <div class="store-item-down">
+            <div class="store-item-info">Fast Food
+              <div class="store-item-name">In-n-Out</div>
+              <div class="store-price-buy"><span>$9.99</span> :شراء</div>
+              <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+            </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+          </div>
+        </div>
+
+      </article>
     </article>
-  </article>
-</main>
+  </main>
 <footer>
-  <div class="footer-border"></div>
-  <div class="footer">
+  <div class="down">
     <div>
-      <p>Powered By Lenix  &nbsp; &bull;  &nbsp; All Copyrights Are Reserved &copy; Revival City 2024</p>
-    </div>
-    <div>
-      <a href="terms.html">Terms</a> &nbsp; &bull;  &nbsp; 
-      <a href="privacypolicy.html">Privacy Policy</a> &nbsp; &bull;  &nbsp; 
-      <a href="security.html">Security</a> &nbsp; &bull;  &nbsp; 
-      <a href="https://discord.gg/83bBX2GvCg">Contact Us</a> &nbsp; &bull;  &nbsp; 
-      <a href="aboutus.html">About Us</a>
+      <p>Founded By Lenix  &nbsp; &bull;  &nbsp; All Rights Reserved &copy; Revival City 2024</p>
     </div>
   </div>
 </footer>
-
-<script type="module" src="../scripts/store.js"></script>
 </body>
 </html>

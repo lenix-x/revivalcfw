@@ -742,16 +742,16 @@ section a:hover {
 .store-bars:hover .store-dropdown{
   display: block;
 }
-.store-home {
+.store-index {
   flex: 2;
 }
-.store-home a {
+.store-index a {
   display: flex;
   align-items: center;
   justify-content: right;
   margin-right: 20%
 }
-.store-home i {
+.store-index i {
   font-size: 1.3em;
   font-weight: bold;
   margin-top: 0.7vh;
@@ -862,7 +862,7 @@ section a:hover {
   transform: scale(1.1, 1.1);
   cursor: pointer;
 }
-.store-item-up-cars a img {
+.store-item-up a img {
   max-width: 40vh;
   max-height: 40vh;
   border-radius: 1vh;
@@ -871,7 +871,7 @@ section a:hover {
   margin-top: 1.5vh;
   transition: all 0.3s ease;
 }
-.store-item-up-cars a img:hover {
+.store-item-up a img:hover {
   transform: scale(1.05, 1.11);
   cursor: pointer;
 }
@@ -1020,14 +1020,14 @@ section a:hover {
   font-size: large;
 }
 
-/* home */
-.home {
+/* index */
+.index {
   background-image: url(../images/interface/back.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.home-section {
+.index-section {
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -1037,7 +1037,7 @@ section a:hover {
   padding-bottom: 1%;
   background-color: #00111d;
 }
-.home-section2 {
+.index-section2 {
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -1047,7 +1047,7 @@ section a:hover {
   padding-bottom: 1%;
   background-color: #a31818;
 }
-.home-section3 {
+.index-section3 {
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -1058,7 +1058,7 @@ section a:hover {
   background:linear-gradient(to left , #5428a5, #5428a5, #7df818, #7df818);
   color: black;
 }
-.homebox {
+.indexbox {
   backdrop-filter: blur(10vh);
   width: 35%;
   text-align: center;
@@ -1068,7 +1068,7 @@ section a:hover {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
 }
-.homebox2 {
+.indexbox2 {
   backdrop-filter: blur(10vh);
   width: 66%;
   text-align: center;
@@ -1078,7 +1078,7 @@ section a:hover {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
 }
-.homebox3 {
+.indexbox3 {
   width: 59%;
   text-align: center;
   margin: 0 auto;
@@ -1087,13 +1087,13 @@ section a:hover {
   border-right: 1px solid black;
   border-left: 1px solid black;
 }
-.homereq li {
+.indexreq li {
   list-style: none;
   text-align: end;
   margin-right: 15%;
   font-size: medium;
 }
-.home-btn {
+.index-btn {
   margin-top: 8%;
 }
 /* Rules */

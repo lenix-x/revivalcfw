@@ -5,73 +5,224 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Lenix">
   <meta name="description" content="This is a WebPage project">
-  <title>WebPage</title>
+  <title>Revival | Store - Estates</title>
   <link rel="stylesheet" href="../styles/style.css" type="text/css">
   <link rel="icon" href="../images/interface/rsfw.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="store-body">
-<header>
-  <nav class="store-nav-after">
-    <div class="store-bars">
-      <div class="store-left">
-        <i class="fa-solid fa-bars"></i>
+  <div style="position: fixed; right: 5%; top: 10%; opacity: 0.4; text-shadow: 0 0 1rem gray; z-index: 2;">ماتراه هو ليس النتيجة النهائية (قيد التطوير و الصيانة)</div>
+  <header>
+    <nav class="store-nav">
+      <div class="left">
+        <div class="store-search">
+          <input type="search" placeholder="Search...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
-      <div class="store-dropdown">
-        <div><a href="../store.html">&lt; Go Back</a></div>
-        <div><a href="../store/restaurants.html">Restaurant</a></div>
+      <div class="store-container">
+        <div><a href="../store.html"><b>Store</b></a></div>
         <div><a href="../store/cars.html">Cars</a></div>
+        <div><a href="../store/restaurants.html">Restaurants</a></div>
         <div><a href="../store/workshops.html">Workshops</a></div>
         <div><a href="../store/services.html">Services</a></div>
         <div><a href="../store/projects.html">Projects</a></div>
         <div><a href="../store/plates.html">Plates</a></div>
       </div>
-    </div>
-    <div class="store-home">
-      <a href="../home.html">
-        <img src="../images/interface/rsfw.png" alt="Revival logo" title="Revival" style="width: 50px; height: 50px;">
-        <i>evival&nbsp;City</i>
-      </a>
-    </div>
-    <div class="store-center">
-      <input type="search">
-    </div>
-    <div class="store-right">
-      <div class="store-currency">$</div>
-      <a class="store-cart" href="cart.html">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <div class="cart-quantity js-cart-quantity">0</div>
-      </a>
-    </div>
-  </nav>
-</header>
-<main>
-  <article class="store-section"> <!-- I gave it article because it have a css code (main section{}) -->
+      <div class="right">
+        <!-- <div class="store-currency">$</div> -->
+        <a class="store-cart" href="../store/cart.html">
+          <i class="fa-solid fa-cart-shopping">
+            <div class="cart-quantity js-cart-quantity">0</div>
+          </i>
+        </a>
+      </div>
+    </nav>
+  </header>
+<main class="items-main">
+  <article class="store-section">
     <div class="store-header">
       <h1> العقارات </h1>
-      <hr>
     </div>
-    <article class="js-estate-products"> <!-- The items -->
+    <article class="js-products">
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/castle.png" alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Castle
+            <div class="store-item-name">#1 Castle | قصر</div>
+            <div class="store-price-buy"><span>$24.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$14.99</span> :إيجار</div>
+        </div>
+        <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+      </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg" alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#2 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$19.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$9.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#3 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$18.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$8.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#4 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$17.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$7.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#5 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$16.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$6.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#6 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$15.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$5.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#7 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#1 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#8 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$13.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$3.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/house/house.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Villa
+            <div class="store-item-name">#9 Villa | فيلا</div>
+            <div class="store-price-buy"><span>$13.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$3.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/service.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Garage
+            <div class="store-item-name"> قراج مركبات | المستوى الثالث </div>
+            <div class="store-price-buy"><span>$19.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$9.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/service.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Garage
+            <div class="store-item-name"> قراج مركبات | المستوى الثاني </div>
+            <div class="store-price-buy"><span>$14.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$6.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
+      <div class="store-item">
+        <div class="store-item-up">
+          <a href="store/item.html"><img src="../images/service.jpg"  alt="expired or deleted"></a>
+        </div>
+        <div class="store-item-down">
+          <div class="store-item-info">Garage
+            <div class="store-item-name"> قراج مركبات | المستوى الأول </div>
+            <div class="store-price-buy"><span>$9.99</span> :شراء</div>
+            <div class="store-price-rent"><span>$4.99</span> :إيجار</div>
+        </div>
+            <a class="btn-available" href="https://discord.com/channels/1185127949360439296/1226913653865840771" target="_blank">شراء الأن</a>
+        </div>
+      </div>
     </article>
   </article>
 </main>
 <footer>
-  <div class="footer-border"></div>
-  <div class="footer">
+  <div class="down">
     <div>
-      <p>Powered By Lenix  &nbsp; &bull;  &nbsp; All Copyrights Are Reserved &copy; Revival City 2024</p>
-    </div>
-    <div>
-      <a href="terms.html">Terms</a> &nbsp; &bull;  &nbsp; 
-      <a href="privacypolicy.html">Privacy Policy</a> &nbsp; &bull;  &nbsp; 
-      <a href="security.html">Security</a> &nbsp; &bull;  &nbsp; 
-      <a href="https://discord.gg/83bBX2GvCg">Contact Us</a> &nbsp; &bull;  &nbsp; 
-      <a href="aboutus.html">About Us</a>
+      <p>Founded By Lenix  &nbsp; &bull;  &nbsp; All Rights Reserved &copy; Revival City 2024</p>
     </div>
   </div>
 </footer>
-
-<script type="module" src="../scripts/store.js"></script>
-
 </body>
 </html>
