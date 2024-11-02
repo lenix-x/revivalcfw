@@ -8,7 +8,7 @@ products.forEach((product) => {
   productsHTML += `
     <div class="store-item">
       <div class="store-item-up">
-        <a href="../store/item.html"><img src="${product.image}" alt="expired or deleted"></a>
+        <a href="stores/item.html"><img src="${product.image}" alt="expired or deleted"></a>
       </div>
       <div class="store-item-down">
         <div class="store-item-info">
